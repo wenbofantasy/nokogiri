@@ -12,18 +12,18 @@
 
 <p>
   <b>Image url:</b>
-  <%= @computer.image_url %>
+  <%=image_tag @computer.image_url %>
 </p>
 
-<p>
-  <b>Image:</b>
-<%= image_tag @computer.avatar.url %>
-</p>
+<%#<p>%>
+  <%#<b>Image:</b>%>
+<%#<%= image_tag @computer.avatar.url %>
+<%#</p>%>
 
-<p>
-  <b>Price:</b>
-  <%= @computer.price %>
-</p>
+<%#<p>%>
+  <%#<b>Price:</b>%>
+  <%#<%= @computer.price %>
+<%#</p>%>
 
 
 <%= link_to 'Edit', edit_computer_path(@computer) %> |

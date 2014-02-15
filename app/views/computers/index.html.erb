@@ -1,10 +1,11 @@
 <h1>Listing computers</h1>
-
+<%= will_paginate @computers %>
 <table>
   <tr>
     <th>Name</th>
     <th>Product url</th>
     <th>Image url</th>
+    <th>Image image</th>
     <th>Price</th>
     <th></th>
     <th></th>
@@ -16,6 +17,7 @@
     <td><%= computer.name %></td>
     <td><%= computer.product_url %></td>
     <td><%= computer.image_url %></td>
+    <td><%= image_tag computer.image_url %></td>
     <td><%= computer.price %></td>
     <td><%= link_to 'Show', computer %></td>
     <td><%= link_to 'Edit', edit_computer_path(computer) %></td>

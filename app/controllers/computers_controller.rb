@@ -2,7 +2,7 @@ class ComputersController < ApplicationController
   # GET /computers
   # GET /computers.json
   def index
-    @computers = Computer.all
+    @computers = Computer.paginate(page: params[:page])
 
     respond_to do |format|
       format.html # index.html.erb
@@ -74,6 +74,8 @@ class ComputersController < ApplicationController
   def destroy
     @computer = Computer.find(params[:id])
     @computer.destroy
+    @computer.avatar = nil
+    @computer.save
 
     respond_to do |format|
       format.html { redirect_to computers_url }

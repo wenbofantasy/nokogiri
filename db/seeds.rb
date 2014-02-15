@@ -38,7 +38,7 @@ def jingdong(url)
     }
   }
 end
-for i in 1..20
+for i in 1..2
   @file.puts("这是第#{i}页")
   #url="http://www.qiushibaike.com/8hr/page/#{i}"
   url="http://list.jd.com/670-671-672-0-0-0-0-0-0-0-1-1-#{i}-1-1-72-4137-0.html"
