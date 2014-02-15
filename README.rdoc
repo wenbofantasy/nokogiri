@@ -28,5 +28,5 @@ link:files/vendor/rails/actionpack/README.html.
 
 $ rake db:create                                                                                              
 $ rake db:migrate                                                                                             
-$ rake db:seed  # Insert information to the table.                                                            
+$ rake db:seed  # use nokogiri insert information to the table.                                                            
 OK!
