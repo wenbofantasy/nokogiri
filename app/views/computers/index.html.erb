@@ -1,0 +1,29 @@
+<h1>Listing computers</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Product url</th>
+    <th>Image url</th>
+    <th>Price</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @computers.each do |computer| %>
+  <tr>
+    <td><%= computer.name %></td>
+    <td><%= computer.product_url %></td>
+    <td><%= computer.image_url %></td>
+    <td><%= computer.price %></td>
+    <td><%= link_to 'Show', computer %></td>
+    <td><%= link_to 'Edit', edit_computer_path(computer) %></td>
+    <td><%= link_to 'Destroy', computer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Computer', new_computer_path %>

@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @computer.name %>
+</p>
+
+<p>
+  <b>Product url:</b>
+  <%= @computer.product_url %>
+</p>
+
+<p>
+  <b>Image url:</b>
+  <%= @computer.image_url %>
+</p>
+
+<p>
+  <b>Image:</b>
+<%= image_tag @computer.avatar.url %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @computer.price %>
+</p>
+
+
+<%= link_to 'Edit', edit_computer_path(@computer) %> |
+<%= link_to 'Back', computers_path %>
